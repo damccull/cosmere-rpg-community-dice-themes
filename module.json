@@ -1,0 +1,42 @@
+{
+"id": "cosmere-rpg-dice-so-nice-themes",
+  "name": "cosmere-rpg-dice-so-nice-themes",
+  "title": "Cosmere RPG: Dice-So-Nice Themes",
+  "description": "Adds Cosmere RPG themes to Dice-So-Nice.",
+  "version": "0.1.0",
+  "minimumCoreVersion": "12",
+  "compatibleCoreVersion": "12",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "author": "damccull",
+  "authors": [
+    {
+      "name": "DocSun"
+    },
+    {
+      "name": "damccull"
+    }
+  ],
+  "dependencies": [
+    {
+      "type": "module",
+      "name": "dice-so-nice"
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "type": "module",
+        "id": "dice-so-nice"
+      }
+    ]
+  },
+  "scripts": [
+    "cosmere-dice.js"
+  ],
+  "url": "https://github.com/damccull/Cosmere-RPG-Dice-So-Nice-Theme",
+  "manifest": "https://raw.githubusercontent.com/damccull/Cosmere-RPG-Dice-So-Nice-Theme/main/module.json",
+  "download": "https://github.com/damccull/Cosmere-RPG-Dice-So-Nice-Theme/archive/0.1.0.zip"
+}
