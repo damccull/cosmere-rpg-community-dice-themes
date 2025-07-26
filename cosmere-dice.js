@@ -22,7 +22,7 @@ const DSN_GROUP = "Cosmere RPG Community Themes";
 const DSN_MODE = "default";
 
 // Define theme IDs to prevent hard coded ID names if they need changed
-const THEME_BASIC_STORMLIGHT = "basic_stormlight";
+const THEME_ANTI_STORMLIGHT = "anti_stormlight"
 const THEME_BONDSMITH = "bondsmith";
 const THEME_DUSTBRINGER = "dustbringer";
 const THEME_EDGEDANCER = "edgedancer";
@@ -31,6 +31,7 @@ const THEME_LIFELIGHT = "lifelight";
 const THEME_LIGHTWEAVER = "lightweaver";
 const THEME_SKYBREAKER = "skybreaker";
 const THEME_STONEWARD = "stoneward";
+const THEME_STORMLIGHT = "stormlight";
 const THEME_TOWERLIGHT = "towerlight";
 const THEME_TRUTHWATCHER = "truthwatcher";
 const THEME_VOIDLIGHT = "voidlight";
@@ -40,12 +41,29 @@ const THEME_WINDRUNNER = "windrunner";
 
 // Define themes
 const THEMES = {
-  [THEME_BASIC_STORMLIGHT]: {
-    description: 'Basic Stormlight',
-    system: THEME_BASIC_STORMLIGHT,
+  [THEME_ANTI_STORMLIGHT]: {
+    description: 'Anti-Stormlight',
+    system: THEME_ANTI_STORMLIGHT,
     colorset: {
-      name: THEME_BASIC_STORMLIGHT,
-      description: 'Basic Stormlight',
+      name: THEME_ANTI_STORMLIGHT,
+      description: 'Anti-Stormlight',
+      category: DSN_GROUP,
+      foreground: '#294783',
+      background: '#dce5f4',
+      outline: '#c4d6f8',
+      edge: '#3e6ac1',
+      texture: 'ice',
+      material: 'glass',
+      font: 'Arial',
+      visibility: 'visible'
+    },
+  },
+  [THEME_STORMLIGHT]: {
+    description: 'Stormlight',
+    system: THEME_STORMLIGHT,
+    colorset: {
+      name: THEME_STORMLIGHT,
+      description: 'Stormlight',
       category: DSN_GROUP,
       foreground: '#294783',
       background: '#dce5f4',
