@@ -45,6 +45,6 @@
     "cosmere-dice.js"
   ],
   "url": "https://github.com/damccull/cosmere-rpg-community-dice-themes",
-  "manifest": "https://raw.githubusercontent.com/damccull/cosmere-rpg-community-dice-themes/main/module.json",
+  "manifest": "https://raw.githubusercontent.com/damccull/cosmere-rpg-community-dice-themes/refs/heads/master/module.json",
   "download": "https://github.com/damccull/cosmere-rpg-community-dice-themes/archive/v0.1.0.zip"
 }
