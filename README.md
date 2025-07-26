@@ -12,11 +12,6 @@ manual installs.
 
 FoundryVTT has now installed it for you.
 
-## Credits
-
-[Doc-Sun](https://github.com/Doc-Sun) - Designed all these super nice dice themes.
-[damccull](https://github.com/damccull) - Wrote the module
-
 ## Contributing
 
 ### Wish list
@@ -67,3 +62,27 @@ const THEMES = {
   //...
 }
 ```
+
+## Credits
+
+[Doc-Sun](https://github.com/Doc-Sun) - Originally designed many super nice dice themes.
+* Themes
+    * Bondsmith
+    * Dustbringer
+    * Edgedancer
+    * Elsecaller
+    * Lifelight
+    * Lightweaver
+    * Skybreaker
+    * Stoneward
+    * Stormlight
+    * Towerlight
+    * Truthwatcher
+    * Voidlight
+    * Warlight
+    * Willshaper
+    * Windrunner
+[damccull](https://github.com/damccull)
+* Converted Doc-Sun's themes to a module
+* Themes
+    * Anti-Stormlight
