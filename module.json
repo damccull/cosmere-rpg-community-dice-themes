@@ -3,24 +3,20 @@
   "title": "Cosmere RPG: Community Dice-So-Nice Themes",
   "description": "Adds Cosmere RPG themes to Dice-So-Nice.",
   "version": "0.2.0",
-  "minimumCoreVersion": "12",
-  "compatibleCoreVersion": "12",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
   },
   "authors": [
     {
-      "name": "DocSun"
+      "name": "Doc-Sun",
+      "discord": "doc_sun",
+      "flags": {}
     },
     {
-      "name": "damccull"
-    }
-  ],
-  "dependencies": [
-    {
-      "type": "module",
-      "name": "dice-so-nice"
+      "name": "damccull",
+      "discord": "damccull",
+      "flags": {}
     }
   ],
   "relationships": {
@@ -37,7 +33,8 @@
     "requires": [
       {
         "type": "module",
-        "id": "dice-so-nice"
+        "id": "dice-so-nice",
+        "compatibility": {}
       }
     ]
   },
