@@ -3,6 +3,8 @@
 This is a FoundryVTT module that provides several dice themes for the Dice-So-Nice module. They are
 based on the various Radiant Orders and the various kinds of light that exist on Roshar.
 
+<img src="alld20s.png" height="400">
+
 ## Installation
 
 Paste this link into your FoundryVTT module installation dialog at the bottom where it has box for
