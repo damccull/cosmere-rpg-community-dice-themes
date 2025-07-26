@@ -65,7 +65,8 @@ const THEMES = {
 
 ## Credits
 
-[Doc-Sun](https://github.com/Doc-Sun) - Originally designed many super nice dice themes.
+[Doc-Sun](https://github.com/Doc-Sun)
+* Originally designed many super nice dice themes.
 * Themes
     * Bondsmith
     * Dustbringer
@@ -82,7 +83,8 @@ const THEMES = {
     * Warlight
     * Willshaper
     * Windrunner
+
 [damccull](https://github.com/damccull)
 * Converted Doc-Sun's themes to a module
 * Themes
-    * Anti-Stormlight
+    * Anti-Stormlight - Modification of Doc-Sun's Stormlight
