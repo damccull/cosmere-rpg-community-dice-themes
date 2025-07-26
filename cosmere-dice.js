@@ -22,7 +22,7 @@ const DSN_GROUP = "Cosmere RPG Community Themes";
 const DSN_MODE = "default";
 
 // Define theme IDs to prevent hard coded ID names if they need changed
-const THEME_ANTI_STORMLIGHT = "anti_stormlight"
+const THEME_ANTI_STORMLIGHT = "anti-stormlight"
 const THEME_BONDSMITH = "bondsmith";
 const THEME_DUSTBRINGER = "dustbringer";
 const THEME_EDGEDANCER = "edgedancer";
