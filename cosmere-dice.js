@@ -24,6 +24,7 @@ const DSN_MODE = "default";
 // Define theme IDs to prevent hard coded ID names if they need changed
 const THEME_BASIC_STORMLIGHT = "basic_stormlight";
 const THEME_WINDRUNNER = "windrunner";
+const THEME_ELSECALLER = "elsecaller";
 
 // Define themes
 const THEMES = {
@@ -39,6 +40,23 @@ const THEMES = {
       outline: '#3e6ac1',
       edge: '#c4d6f8',
       texture: 'bronze03a',
+      material: 'glass',
+      font: 'Arial',
+      visibility: 'visible'
+    },
+  },
+  [THEME_ELSECALLER]: {
+    description: 'Elsecaller',
+    system: THEME_ELSECALLER,
+    colorset: {
+      name: THEME_ELSECALLER,
+      description: 'Elsecaller',
+      category: DSN_GROUP,
+      foreground: '#d6d6d6',
+      background: '#4097bf',
+      outline: '#4097bf',
+      edge: '#4097bf',
+      texture: 'ice_2',
       material: 'glass',
       font: 'Arial',
       visibility: 'visible'
