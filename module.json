@@ -1,6 +1,5 @@
 {
-"id": "cosmere-rpg-dice-so-nice-themes",
-  "name": "cosmere-rpg-dice-so-nice-themes",
+  "id": "cosmere-rpg-dice-so-nice-themes",
   "title": "Cosmere RPG: Dice-So-Nice Themes",
   "description": "Adds Cosmere RPG themes to Dice-So-Nice.",
   "version": "0.1.0",
@@ -10,7 +9,6 @@
     "minimum": "12",
     "verified": "12"
   },
-  "author": "damccull",
   "authors": [
     {
       "name": "DocSun"
@@ -33,7 +31,7 @@
       }
     ]
   },
-  "scripts": [
+  "esmodules": [
     "cosmere-dice.js"
   ],
   "url": "https://github.com/damccull/Cosmere-RPG-Dice-So-Nice-Theme",
