@@ -21,17 +21,14 @@ FoundryVTT has now installed it for you.
 
 ### Wish list
 
-Themes based on:
-
-* Mistborn
-* White Sands
-* Elantris
-* Any of Brandon Sanderson's other novels
-
-Each set of themes should get its own const. If we get more than Stormlight Archive, this script
+* Themes based on:
+    * Mistborn
+    * White Sands
+    * Elantris
+    * Any of Brandon Sanderson's other novels
+    * NOTE: Each set of themes should get its own const. If we get more than Stormlight Archive, this script
 will need a small modification to allow this.
-
-Also, some way to programmatically add Dice-So-Nice's special effects when a theme is chosen would
+* If possible, some way to programmatically add Dice-So-Nice's special effects when a theme is chosen would
 be really nice.
 
 ### Instructions
