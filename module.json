@@ -11,11 +11,13 @@
     {
       "name": "Doc-Sun",
       "discord": "doc_sun",
+      "url": "https://github.com/Doc-Sun",
       "flags": {}
     },
     {
       "name": "damccull",
       "discord": "damccull",
+      "url": "https://github.com/damccull",
       "flags": {}
     }
   ],
