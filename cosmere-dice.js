@@ -21,29 +21,49 @@ export const IMPORTED_RESOURCES = {
 const DSN_GROUP = "Cosmere RPG Community Themes";
 const DSN_MODE = "default";
 
-// Define theme IDs
+// Define theme IDs to prevent hard coded ID names if they need changed
 const THEME_BASIC_STORMLIGHT = "basic_stormlight";
 const THEME_WINDRUNNER = "windrunner";
 
-// Define color set IDs
-const COLORS_BASIC_STORMLIGHT = "basic_stormlight_colors";
-const COLORS_WINDRUNNER = "windrunner_colors";
-
-// Define new dice preset systems
-const SYSTEM_BASIC_STORMLIGHT = new DiceSystem(THEME_BASIC_STORMLIGHT, "Basic Stormlight", DSN_MODE, DSN_GROUP);
-const SYSTEM_WINDRUNNER = new DiceSystem(THEME_WINDRUNNER, "Windrunner", DSN_MODE, DSN_GROUP);
-
+// Define themes
 const THEMES = {
   [THEME_BASIC_STORMLIGHT]: {
+    description: 'Basic Stormlight',
     system: THEME_BASIC_STORMLIGHT,
-    colorset: THEME_BASIC_STORMLIGHT,
+    colorset: {
+      name: THEME_BASIC_STORMLIGHT,
+      description: 'Basic Stormlight',
+      category: DSN_GROUP,
+      foreground: '#294783',
+      background: '#dce5f4',
+      outline: '#3e6ac1',
+      edge: '#c4d6f8',
+      texture: 'bronze03a',
+      material: 'glass',
+      font: 'Arial',
+      visibility: 'visible'
+    },
   },
   [THEME_WINDRUNNER]: {
+    description: 'Windrunner',
     system: THEME_WINDRUNNER,
-    colorset: THEME_WINDRUNNER,
+    colorset: {
+      name: THEME_WINDRUNNER,
+      description: 'Windrunner',
+      category: DSN_GROUP,
+      foreground: '#ffffff',
+      background: '#294783',
+      outline: '#294783',
+      edge: '#294783',
+      texture: 'ice_2',
+      material: 'glass',
+      font: 'Arial',
+      visibility: 'visible'
+    },
   }
 }
 
+/// Generates numerical dice
 function generateDieObject(sides, themeName) {
   // Validate sides are positive int
   if (typeof sides !== 'number' || sides <= 0 || !Number.isInteger(sides)) {
@@ -56,7 +76,7 @@ function generateDieObject(sides, themeName) {
     throw new Error(`Theme "${themeName}" not found.`);
   }
 
-  // Generate labels
+  // Generate labels with special cases for d10 and d100
   const labels = [];
   if (sides == 10) {
     for (let i = 0; i <= 10; i++) {
@@ -75,25 +95,32 @@ function generateDieObject(sides, themeName) {
   // Determine die type
   const type = `d${sides}`;
 
+  // Return DSN data suitable for addDicePreset()
   return {
     type: type,
     labels: labels,
     system: theme.system,
-    colorset: theme.colorset
+    colorset: themeName
   };
 }
 
+// Define all the numbered dice we want
 const NUMBERED_DICE = [ 2, 4, 6, 8, 10, 12, 20, 100 ];
 
 Hooks.once("diceSoNiceReady", (dice3d) => {
-  dice3d.addSystem(SYSTEM_BASIC_STORMLIGHT);
-  dice3d.addSystem(SYSTEM_WINDRUNNER);
-  // dice3d.addDicePreset(generateDieObject(20, THEME_BASIC_STORMLIGHT));
-  // dice3d.addDicePreset(generateDieObject(20, THEME_WINDRUNNER));
+  // Loop the themes
   Object.entries(THEMES).forEach(([key, value]) => {
+    // Add a system per theme
+    dice3d.addSystem(new DiceSystem(key, THEMES[key].description, DSN_MODE, DSN_GROUP));
+    dice3d.addColorset(value.colorset);
+
+    // Loop over the valid numbered dice
     NUMBERED_DICE.forEach(sides => {
+      // Add a dice preset (single die) for this theme
       dice3d.addDicePreset(generateDieObject(sides, key));
     });
+
+    // Add the plot die for this theme
     dice3d.addDicePreset({
       type: "dp",
         labels: [
@@ -113,35 +140,7 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
               IMPORTED_RESOURCES.PLOT_DICE_OP_BUMP,
           ],
       system: value.system,
-      colorset: value.colorset
+      colorset: key
     });
-  });
-  dice3d.addColorset({
-    name: THEME_BASIC_STORMLIGHT,
-    description: 'Basic Stormlight',
-    category: DSN_GROUP,
-    foreground: '#294783',
-    background: '#dce5f4',
-    outline: '#3e6ac1',
-    edge: '#c4d6f8',
-    texture: 'bronze03a',
-    material: 'glass',
-    font: 'Arial',
-    visibility: 'visible'
-  });
-  dice3d.addColorset({
-    name: THEME_WINDRUNNER,
-    description: 'Windrunner',
-    category: DSN_GROUP,
-    foreground: '#FFFFFF',
-    background: '#000000',
-    edge: 'FFFF00',
-    material: 'chrome',
-    font: 'Arial Black',
-    fontScale: {
-      "d6": 1.1,
-      "df": 2.5,
-    },
-    visibility: 'visible'
   });
 });
