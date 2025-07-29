@@ -2,7 +2,7 @@
   "id": "cosmere-rpg-community-dice-themes",
   "title": "Cosmere RPG: Community Dice-So-Nice Themes",
   "description": "Adds Cosmere RPG themes to Dice-So-Nice.",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
@@ -45,5 +45,5 @@
   ],
   "url": "https://github.com/damccull/cosmere-rpg-community-dice-themes",
   "manifest": "https://raw.githubusercontent.com/damccull/cosmere-rpg-community-dice-themes/refs/heads/master/module.json",
-  "download": "https://github.com/damccull/cosmere-rpg-community-dice-themes/archive/v0.2.1.zip"
+  "download": "https://github.com/damccull/cosmere-rpg-community-dice-themes/archive/v1.0.0.zip"
 }
