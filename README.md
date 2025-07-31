@@ -31,10 +31,11 @@ At least one person has asked each of these questions:
     presets to contain special effect settings, so you will need to set any special effects yourself
     in the Special Effects tab.
 2. Why isn't the Fudge Die styled?
-    - The fudge die is not used in the Cosmere RPG so it was not deemed necessary to style. It will
+    - It is, now, as of v1.1.0.
+    - ~~The fudge die is not used in the Cosmere RPG so it was not deemed necessary to style. It will
     only be visible in the Dice-So-Nice configuration panel unless you choose to roll it anyway. It
     requires a special-case handling, like the Plot Die does, but if there is a desire, this one
-    can be styled as well.
+    can be styled as well.~~
 3. Why are there Dice Presets _and_ Themes named the same?
     - The dice presets just give you a pre-determined style of dice, as the contributors designed them
     to look. You can not further customize these.
