@@ -120,6 +120,13 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
         system: theme.id,
         colorset: theme.id
       });
+      //Add the fate die
+      dice3d.addDicePreset({
+        type: 'df',
+        labels: ['-', ' ' , '+'],
+        system: theme.id,
+        colorset: theme.id
+      })
       console.debug("DEBUG: Plot die preset added");
       console.debug("DEBUG: Done with " + theme.id);
     });
