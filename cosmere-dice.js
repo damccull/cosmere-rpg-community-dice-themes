@@ -21,7 +21,7 @@ const IMPORTED_RESOURCES = {
 const DSN_MODE = "default";
 
 // Import theme packs and store the packs in a list
-import { SLA_THEMES } from './themes/sla.js'
+import { SLA_THEMES } from './themes/sla.js';
 const DICE_THEMEPACKS = [ SLA_THEMES ];
 
 /// Generates numerical dice
