@@ -1,8 +1,8 @@
 import { DiceSystem } from '../dice-so-nice/api.js';
 
 // Import plot die faces from cosmere-rpg system
-export const GAME_SYSTEM_ID = 'cosmere-rpg';
-export const IMPORTED_RESOURCES = {
+const GAME_SYSTEM_ID = 'cosmere-rpg';
+const IMPORTED_RESOURCES = {
     PLOT_DICE_BLANK_BUMP: `systems/${GAME_SYSTEM_ID}/assets/art/plot_blank_bump.png`,
     PLOT_DICE_BLANK: `systems/${GAME_SYSTEM_ID}/assets/art/plot_blank.png`,
     PLOT_DICE_C2_BUMP: `systems/${GAME_SYSTEM_ID}/assets/art/plot_c2_bump.png`,
