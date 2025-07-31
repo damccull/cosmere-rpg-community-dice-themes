@@ -25,7 +25,7 @@ At least one person has asked each of these questions:
     as well. It also overwrites any customized settings you've set up in your Dice-So-Nice settings panel
     so you will need to **save and export** your own settings prior to importing these if you want to
     recover them later.
-    - This module is a one-time install for all players, made by the server admin and enabled per world
+    - This module is a one-time install for all players, by the server admin and enabled per world
     just like any other module. Once the GM has enabled it for the world, any player can just select
     the dice they want. The downside is that the Dice-So-Nice API does not currently allow for dice
     presets to contain special effect settings, so you will need to set any special effects yourself
